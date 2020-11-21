@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CabCed</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="cab_task.css">
+    <script src="https://use.fontawesome.com/5498406058.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark nav">
+        <img src="image/logo.jpg" class="rounded image" alt="Logo">
+        <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav text-center">
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bolder text-dark ml-3" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bolder text-dark  ml-3" href="#">Reviews</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn singup_btn ml-3" href="#">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="form_image" id="sugnup">
+        <h1 class="text-center text-light" id="h1">Book a taxi to your destination in town</h1>
+        <p class="text-center text-light" id="p">choose from a range of categories and prices</p>
+        <div class="container">
+            <form class="form  col-lg-5 col-md-12 col-sm-12 col-xs-12 text-center shadow py-3 bg-white rounded" id="submit_form" >
+                <p class="py-2 font-weight-bold" id="head">CedCab</p>
+                <hr>
+                <h3>Your everyday travel partner</h3>
+                <p>AC Cabs for point to point travel</p>
+                <div class="form-row">
+                    <div class="mb-3 col-12">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                            <span class="input-group-text">PICKUP</span>
+                            </div>
+                            <select class="form-control" id="FormControlSelect1">
+                                <option selected>Current Location</option>
+                                <option>Charbagh</option>
+                                <option>Indra Nagar</option>
+                                <option>BBD</option>
+                                <option>Barabanki</option>
+                                <option>Faizabad</option>
+                                <option>Basti</option>
+                                <option>Gorakhpur</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="mb-3 col-12">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                            <span class="input-group-text">DROP</span>
+                            </div>
+                            <select class="form-control" id="FormControlSelect2">
+                                <option selected>Drop for ride estimate</option>
+                                <option>Charbagh</option>
+                                <option>Indra Nagar</option>
+                                <option>BBD</option>
+                                <option>Barabanki</option>
+                                <option>Faizabad</option>
+                                <option>Basti</option>
+                                <option>Gorakhpur</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="mb-3 col-12">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                            <span class="input-group-text">CAB TYPE</span>
+                            </div>
+                            <select class="form-control" id="FormControlSelect3">
+                                <option selected>Dropdown to select cab type</option>
+                                <option>CedMicro</option>
+                                <option>CedMini</option>
+                                <option>CedRoyal</option>
+                                <option>CedSUV</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="mb-3 col-12">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                            <span class="input-group-text">LUGGAGE</span>
+                            </div>
+                            <input type="number" class="form-control" id="luggage" placeholder="Enter Weight in kg">
+                        </div>
+                    </div>
+                </div>
+                <button class="btn col-12" id="submit">Calculate Fare</button>
+                <div class="bg-dark" id="res" style="display: none;">
+                    <p class="text-light">Your Estimated Fare is Rs.<span id="result"></span></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="row">
+            <div id="icon" class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 my-1 text-center">
+                <i class="la fa fa-facebook mt-2 px-2 py-2 rounded-circle ml-3" aria-hidden="true"></i>
+                <i class="la fa fa-instagram mt-2 px-2 py-2 rounded-circle ml-3" aria-hidden="true"></i>
+                <i class="la fa fa-twitter mt-2 px-2 py-2 rounded-circle ml-3" aria-hidden="true"></i>
+            </div>
+            <div id="oslo" class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 mb-0 text-center">
+                <img src="image/logo.jpg" class="img-fluid rounded image" alt="Logo">
+            </div>
+            <div id="quick_links" class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 my-1 text-center">
+                <a class="ml-3" href="#features">FEATURES</a>
+                <a class="ml-3" href="#reviews">REVIEWS</a>
+                <a class="ml-3" href="#signup">SIGN UP</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="cab_task.js"></script>
+</body>
+</html>
